@@ -1,0 +1,46 @@
+.prodetail{
+    display: flex;
+    margin-top: 30px;
+    padding: 30px;
+}
+.sale1{
+    text-decoration: line-through;
+    color: #636e72;
+    font-size: 23px;
+}
+.decrip{
+    max-width: 600px;
+    margin: 20px auto;
+}
+.detail{
+    margin: 50px 30px;
+    padding: 20px;
+}
+.name1{
+    text-align: center;
+    font-size: 50px;
+    color: #ff9b00;
+}
+.line{
+    width: 90%;
+    height: 2px;
+    background-color: #636e72;
+    margin: 0 auto;
+}
+/* .quan .btn{
+    border: none;
+    font-size: 25px;
+    color: #000;
+    margin: auto 20px
+}
+.quan{
+    font-size: 20px;
+} */
+.buy3{
+    margin-top: 20px;
+    width: 150px;
+    
+}
+.test{
+    position: absolute;
+}

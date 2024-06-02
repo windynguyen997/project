@@ -1,0 +1,53 @@
+.coverbox{
+    display: flex;
+}
+.h1{
+    text-align: center;
+    margin: 0 auto;
+}
+.line1{
+    width: 100px;
+    height: 2px;
+    background-color: #ff9b00;
+    margin: 25px auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color:#ff9b00;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.box img{
+    width: 150px;
+    transform: translate(18%, 20%);
+}
+.covertext{
+    display: flex;
+}
+.text{
+    width: 200px;
+    margin: 10px auto;
+}
+.text p{
+    text-align: center;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .coverbox{
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .box img{
+        width: 75px;
+    }
+}
