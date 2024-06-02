@@ -1,53 +1,134 @@
-.coverbox{
+.coverbox {
     display: flex;
 }
-.h1{
+
+.h1 {
     text-align: center;
-    margin: 0 auto;
 }
-.line1{
-    width: 100px;
+
+.line1 {
+    width: 50px;
     height: 2px;
     background-color: #ff9b00;
     margin: 25px auto;
 }
 
-.box{
+.box {
     width: 200px;
     height: 200px;
-    background-color:#ff9b00;
+    background-color: #ff9b00;
     border: 1px solid #fff;
     margin: 0 auto;
     border-radius: 10px;
 }
-.box img{
+
+.box img {
     width: 150px;
     transform: translate(18%, 20%);
 }
-.covertext{
+
+.covertext {
     display: flex;
 }
-.text{
+
+.text {
     width: 200px;
     margin: 10px auto;
 }
-.text p{
+
+.text p {
     text-align: center;
     font-size: 25px;
 }
 
+.seller {
+    margin-top: 50px;
+}
+
+.coverbox1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.contain3{
+    position: absolute;
+    transform: translate(310px, -300px);
+    text-align: center;
+}
+.contain3 img{
+    width: 130px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+.contain3 img:hover{
+    width: 160px;
+}
+.box1 {
+    width: 550px;
+    height: 300px;
+    margin: 20px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.week{
+    color: #ecf0f1;
+}
+.btn1{
+    background-color: #006266 !important;
+}
+.btn2{
+    background-color: #ff9b00 !important;
+}
+.btn1:hover{
+    background-color: #EE5A24 !important;
+    border: #EE5A24 !important;
+}
+.btn2:hover{
+    background-color: #EE5A24 !important;
+    border: #EE5A24 !important;
+}
+.coverbox2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    margin: 30px 100px;
+    border-radius: 50%;
+    border: 2px solid #ff9b00;
+}
+.box2 img{
+    width: 50px;
+    transform: translate(50%, 50%);
+}
 @media screen and (max-width: 768px) {
-    .coverbox{
-        .box{
+    .coverbox {
+        .box {
             width: 100px;
             height: 100px;
         }
-
     }
-    .text p{
+
+    .text p {
         font-size: 15px;
     }
-    .box img{
+
+    .box img {
         width: 75px;
+    }
+
+    .coverbox1 {
+        display: block;
+    }
+
+    .box1 {
+        width: 500px;
+        height: 300px;
+    }
+    .week{
+        font-size: 15px;
     }
 }

@@ -11,14 +11,14 @@ const ProductList = () => {
                 <div className='line1'></div>
                 <div className='space'></div>
                 <div className='coverbox'>
-                    <div className='box'>
+                    <div className='box' data-aos="flip-right">
                         <Link to="/product"><img src="https://fiestapets-ishi.myshopify.com/cdn/shop/files/1_edb0c012-b767-4cca-aa6f-89a2d3290574.png?v=1657263777"></img></Link>
                     
                     </div>
-                    <div className='box'>
+                    <div className='box' data-aos="flip-right">
                         <Link to="/product2"> <img src="https://fiestapets-ishi.myshopify.com/cdn/shop/files/2_b5fc0fdb-e8af-4471-b5e8-c7c936a48bf5.png?v=1657263777"></img></Link>
                     </div>
-                    <div className='box'>
+                    <div className='box' data-aos="flip-right">
                         <Link to="/product3"> <img src="https://fiestapets-ishi.myshopify.com/cdn/shop/files/5_20ad538f-9b85-4cb3-a521-03b8cad0074d.png?v=1657263777"></img></Link>
                     </div>
                 </div>

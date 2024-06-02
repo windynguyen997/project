@@ -1,9 +1,9 @@
 .containerSlide {
     margin: auto;
 }
-.containerSlide img {
+/* .containerSlide img {
     height: 43rem;
-}
+} */
 .indicators{
     transform: translateY(-40px);
 }
