@@ -16,9 +16,6 @@ import ProductDetail1 from './components/productDetail/ProductDetail1';
 import AOS from "aos";
 import "aos/dist/aos.css"
 
-
-
-
 const App = () => {
   useEffect(() => {
     AOS.init();
@@ -31,7 +28,6 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route index element={<Home />}></Route>
-            <Route path='/footer' element={<Footer />}></Route>
             <Route path='/product' element={<Product />}></Route>
             <Route path='/product2' element={<Product2 />}></Route>
             <Route path='/product3' element={<Product3 />}></Route>
@@ -41,8 +37,8 @@ const App = () => {
             <Route path='/blog' element={<Blog />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
             <Route path='/cart' element={<Cart />}></Route>
-
           </Routes>
+          <Footer/>
         </BrowserRouter>
       </AppProvider>
     </div>

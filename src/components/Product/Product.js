@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { AppContext } from '../../AppContext';
 import './product.css'
 import { Form, Button, Card, CardBody, CardText, CardTitle, Col, Container, Row, Modal, ModalHeader, ModalBody, ModalFoote, ModalFooter, FormGroup, Label, Input } from 'reactstrap';
-import food from '../../images/pate4.jpg'
+import food from '../../images/catfood8.jpg'
 import { useForm } from 'react-hook-form';
 const Product = () => {
     const [modal, setModal] = useState(false);
@@ -26,8 +26,12 @@ const Product = () => {
     const { addCart, onSearch } = useContext(AppContext)
     return (
         <div>
-
+            <div className='header_img'>
             <img className='banner2' src={food} alt='catfood' />
+            </div>
+            
+
+            <Container>
             <div className='header_product' data-aos="fade-right">
                 <h3>Thực Phẩm Cho Mèo của Moon Shop</h3>
                 <p>Hãy kết hợp cả thức ăn khô và thức ăn ướt để duy trì sức khoẻ tốt cho Boss của bạn!!!</p>
@@ -102,9 +106,7 @@ const Product = () => {
                         tìm
                     </button>
                 </div>
-
             </div>
-            <Container>
                 <Row>
                     {
                         data && data.map((item, index) => (

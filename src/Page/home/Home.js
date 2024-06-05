@@ -5,6 +5,9 @@ import { Button, Offcanvas, OffcanvasBody, OffcanvasHeader } from 'reactstrap';
 import ProductList from '../../components/Main/ProductList';
 import Bestseller from '../../components/Main/Bestseller';
 import Sevice from '../../components/Main/Sevice';
+import Petcare from '../../components/Main/Petcare';
+
+
 
 const Home = () => {
     return (
@@ -13,6 +16,8 @@ const Home = () => {
             <ProductList/>
             <Bestseller/>
             <Sevice/>
+            <Petcare/>
+
         </div>
     );
 }

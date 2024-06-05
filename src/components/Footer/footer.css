@@ -1,0 +1,201 @@
+.footer {
+    background-color: #F7F7F7;
+}
+
+.body_footer {
+    display: flex;
+}
+
+.left {
+    width: 65%;
+}
+
+.left .above {
+    width: 100%;
+    display: flex;
+}
+
+.right {
+    width: 35%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.right i {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.right p {
+    margin-bottom: 30px;
+}
+
+.gray {
+    color: #8395a7;
+}
+
+.left .above .follow {
+    width: 60%;
+    text-align: center;
+    border-right: 1px solid #dfe6e9;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.left .above .follow h5 {
+    margin-top: 20px;
+}
+
+.left .above .follow i {
+    font-size: 20px;
+    margin: auto 10px;
+}
+
+.left .above .contact {
+    width: 40%;
+    margin-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.img2 {
+    width: 100px;
+}
+
+.contact1 {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.contact1 i {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.under {
+    width: 100%;
+    border-top: 1px solid #dfe6e9;
+}
+
+.end {
+    height: 30px;
+    width: 100%;
+    background-color: #0D1D0E;
+}
+
+.send {
+    padding: 5px 40px;
+    font-size: 20px;
+    background-color: #F59900;
+    border: none;
+    border-radius: 15px 50px;
+}
+
+.under {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.under h5 {
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .right {
+        padding: 10px;
+    }
+
+    .right i {
+        font-size: 30px;
+    }
+
+    .right h5 {
+        font-size: 10px;
+    }
+
+    .right p {
+        font-size: 8px;
+    }
+
+    .left .above .follow h5 {
+        margin-top: 10px;
+    }
+
+    .img2 {
+        width: 80px;
+    }
+
+    .left .above .follow h5 {
+        font-size: 10px;
+    }
+
+    .left .above .follow p {
+        font-size: 8px;
+    }
+
+    .left .above .contact {
+        margin-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .contact1 {
+        margin-left: 8px;
+        margin-top: 10px;
+    }
+
+    .contact1 i {
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+    .contact1 h5 {
+        font-size: 10px;
+    }
+
+    .contact1 p {
+        font-size: 8px;
+    }
+
+    .under h5 {
+        margin-right: 10px;
+        font-size: 10px;
+    }
+
+    .send {
+        padding: 3px 20px;
+        font-size: 8px !important;
+        background-color: #F59900 !important;
+        border: none !important;
+    }
+
+    @media screen and (max-width: 576px) {
+        .left .above {
+            display: block;
+        }
+
+        .left .above .follow {
+            width: 100%;
+        }
+
+        .left .above .contact {
+            width: 100%;
+            padding: 0;
+        }
+        .contact1 {
+            margin: 0;
+            padding: 0;
+
+        }
+        .under h5 {
+            margin-right: 5px;
+            font-size: 8px;
+            text-decoration:underline;
+        }
+        
+
+    }
+}
