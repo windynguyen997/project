@@ -9,7 +9,7 @@ import { useForm } from 'react-hook-form';
 const Product = () => {
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
-    const {register, handleSubmit}= useForm();
+    const { register, handleSubmit } = useForm();
     const url = 'https://66124e8c95fdb62f24ee62fe.mockapi.io/product'
     const [data, setData] = useState(null)
     const getData = () => {
@@ -27,11 +27,8 @@ const Product = () => {
     return (
         <div>
             <div className='header_img'>
-            <img className='banner2' src={food} alt='catfood' />
+                <img className='banner2' src={food} alt='catfood' />
             </div>
-            
-
-            <Container>
             <div className='header_product' data-aos="fade-right">
                 <h3>Thực Phẩm Cho Mèo của Moon Shop</h3>
                 <p>Hãy kết hợp cả thức ăn khô và thức ăn ướt để duy trì sức khoẻ tốt cho Boss của bạn!!!</p>
@@ -56,7 +53,7 @@ const Product = () => {
                             </FormGroup>
                             {' '}
                             <FormGroup>
-                                <Label 
+                                <Label
                                     for="phone"
                                     hidden
                                 >
@@ -70,6 +67,20 @@ const Product = () => {
                                 />
                             </FormGroup>
                             {' '}
+                            <FormGroup>
+                                <Label
+                                    for="Comment"
+                                    hidden
+                                >
+                                    Vấn đề cần hỗ trợ
+                                </Label>
+                                <Input className='noidung'
+                                    id="comment"
+                                    name="comment"
+                                    placeholder="Nội dung cần hỗ trợ"
+                                    type="textarea"
+                                />
+                            </FormGroup>
                         </Form>
                     </ModalBody>
                     <ModalFooter>
@@ -82,35 +93,38 @@ const Product = () => {
                     </ModalFooter>
                 </Modal>
             </div>
-            <div className='find'>
-                <div>
-                <Form className='name3' onSubmit={handleSubmit(onSearch)}>
-                    <FormGroup>
-                        <Label
-                            for="text"
-                            hidden
-                        >
-                            Tên sản phẩm
-                        </Label>
-                        <Input {...register("name")}
-                         className='name2'
-                            // name="name"
-                            placeholder="Têm sản phẩm"
-                            type="text"
-                        />
-                    </FormGroup>
-                </Form>
+
+            <Container>
+
+                <div className='find'>
+                    <div>
+                        <Form className='name3' onSubmit={handleSubmit(onSearch)}>
+                            <FormGroup>
+                                <Label
+                                    for="text"
+                                    hidden
+                                >
+                                    Tên sản phẩm
+                                </Label>
+                                <Input {...register("name")}
+                                    className='name2'
+                                    // name="name"
+                                    placeholder="Têm sản phẩm"
+                                    type="text"
+                                />
+                            </FormGroup>
+                        </Form>
+                    </div>
+                    <div>
+                        <button className='tim' type='submit'>
+                            tìm
+                        </button>
+                    </div>
                 </div>
-                <div>
-                <button className='tim' type='submit'>
-                        tìm
-                    </button>
-                </div>
-            </div>
                 <Row>
                     {
                         data && data.map((item, index) => (
-                            <Col>
+                            <Col md={3}>
                                 <Card className='card'>
                                     <Link className='name cardtext' to={`/product/${item.id}`} key={index}>
 
@@ -125,11 +139,17 @@ const Product = () => {
                                             <CardText>
                                                 <span className='sale'>{item.sale}đ</span><span> - </span><span className='price'> {item.price}<span>đ</span></span>
                                             </CardText>
-                                            <Button className='buy'>
-                                                XEM
-                                            </Button>
+
                                         </CardBody>
                                     </Link>
+                                    <div className='buy2'>
+                                                <Button className='buy3' onClick={() => addCart(item.id)}>
+                                                    Thêm vào giỏ hàng
+                                                </Button>
+                                                <Link className='name cardtext' to={`/product/${item.id}`} key={index}>
+                                                    <Button className='buy1'>Chi tiết</Button>
+                                                </Link>
+                                            </div>
                                 </Card>
                             </Col>
                         ))

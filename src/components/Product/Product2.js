@@ -18,13 +18,18 @@ const Product2 = () => {
         })
 
     }
+    
     useEffect(() => {
         getData()
     }, [])
-    const { addCart } = useContext(AppContext)
+    
+    const { addCart2 } = useContext(AppContext)
     return (
         <div>
+            <div className='bannerimg'>
             <img className='banner3' src={tpcn} alt='meptpcn' />
+            </div>
+
             <div className='header_product'>
                 <h3 className='contain2'>Thực Phẩm Chức Năng Của Moon Shop</h3>
                 <p className='contain1'>Hãy bảo vệ Boss của bạn một cách toàn diện, bằng cách ngoài thức ăn chính hãy cho Boss của bạn dùng thêm thực phẩm chức năng nhé!!!</p>
@@ -82,9 +87,12 @@ const Product2 = () => {
                             <Col>
                                 <Card className='card'>
                                     <Link className='name cardtext' to={`/product2/${item.id}`} key={index}>
-                                        <img className='img'
+ 
+                                    <img className='img'
                                             src={item.img}
                                         />
+
+
                                         <CardBody className='cardtext'>
                                             <CardTitle tag="h4">
                                                 <div>{item.name}</div>
@@ -95,7 +103,7 @@ const Product2 = () => {
                                         </CardBody>
                                     </Link>
                                     <div className='buy2'>
-                                        <Button className='buy3' onClick={() => addCart(item.id)}>
+                                        <Button className='buy3' onClick={() => addCart2(item.id)}>
                                         Thêm vào giỏ hàng
                                         </Button>
                                         <Link className='name cardtext' to={`/product2/${item.id}`} key={index}>

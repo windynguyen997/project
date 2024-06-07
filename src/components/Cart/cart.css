@@ -1,0 +1,75 @@
+.headercart{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.imgcart{
+    width: 50px;
+}
+.headertable tr th{
+    font-size: 20px;
+    background-color: #B0C6B5;
+}
+.quan button{
+border: none;
+background: none !important;
+margin:auto 12px ;
+font-size: 20px;
+}
+.quan button:hover{
+color:#F59900;
+scale: 2;
+}
+.bodycart tr td{
+    padding-top: 25px;
+}
+.bin:hover{
+color: #F59900;
+}
+.tong{
+    display: flex;
+    justify-content: end;
+    color: #F59900;
+    padding: 30px;
+}
+.mua{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mua button{
+    padding: 10px 25px;
+    border:none;
+    background-color: #F59900;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.mua button:hover{
+    background-color: #000;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .headertable tr th{
+        font-size: 15px;
+    }
+    .bodycart tr td{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .headertable tr th{
+        font-size: 10px;
+    }
+    .bodycart tr td{
+        font-size: 8px;
+    }
+    .quan button{
+        font-size: 10px;
+        }
+        .mua button{
+            padding: 5px 15px;
+            font-size: 15px;
+
+        }
+}
+

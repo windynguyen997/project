@@ -1,3 +1,6 @@
+/* .header{
+    position: fixed;
+} */
 .img1{
     width: 70px;
 }
@@ -17,10 +20,25 @@
     color: #000;
     font-size: 20px;
 }
+.link:hover{
+    color: #ff9b00;
+}
 
 .link1{
     text-decoration: none;
     color: #000;
     font-size: 20px;
     padding: 20px !important;
+}
+@media screen and (max-width: 576px) {
+.cart button{
+padding: 5px 8px ;
+}
+.cart button i{
+    color: #ff9b00;
+    margin-right: 5px;
+}
+.cart button .numb{
+    color: red;
+}
 }

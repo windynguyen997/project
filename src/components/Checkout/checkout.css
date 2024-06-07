@@ -1,0 +1,63 @@
+.adre{
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.adre .btncheckout button{
+    margin-top: 20px;
+    border: none;
+    background-color: #F59900;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-left: 20px;
+
+}
+.checkout{
+    display: flex;
+}
+.shipcode{
+    margin-top: 20px;
+}
+.bodycart1 tr td{
+    padding-top: 25px;
+}
+.cartinf1{
+    border: 1px solid #F59900;
+    padding: 20px;
+    margin-left: 20px;
+}
+.cartinf{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tt{
+    text-align: center;
+}
+.btncheckout1{
+    display: none;
+}
+.btncheckout1 button{
+    margin-top: 20px;
+    border: none;
+    background-color: #F59900;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 576px) {
+    .checkout{
+        display: block;
+    }
+    .btncheckout{
+        display: none;
+    }
+    .cartinf1{
+        margin-left: 0;
+        padding: 5px;
+    }
+    .btncheckout1{
+        display: block;
+    }
+}
+

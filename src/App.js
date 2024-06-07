@@ -15,6 +15,7 @@ import ProductDeatil2 from './components/productDetail/ProductDeatil2';
 import ProductDetail1 from './components/productDetail/ProductDetail1';
 import AOS from "aos";
 import "aos/dist/aos.css"
+import Checkout from './components/Checkout/Checkout';
 
 const App = () => {
   useEffect(() => {
@@ -37,6 +38,7 @@ const App = () => {
             <Route path='/blog' element={<Blog />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
             <Route path='/cart' element={<Cart />}></Route>
+            <Route path='/checkout' element={<Checkout/>}></Route>
           </Routes>
           <Footer/>
         </BrowserRouter>

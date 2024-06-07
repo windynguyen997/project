@@ -26,7 +26,7 @@ import {
 } from 'reactstrap';
 
 const Header = () => {
-    const { cart } = useContext(AppContext)
+    const { cart,cart2,cart3 } = useContext(AppContext)
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -39,7 +39,7 @@ const Header = () => {
                         <Link to="/"><img className='img1' src={Img1} /></Link>
                     </NavbarBrand>
                     <NavbarToggler className='cart'>
-                        <button className='cart1'><Link className='name' to="/cart"><i class="fa-solid fa-cart-flatbed"></i><span>{cart.length}</span></Link></button>
+                        <button className='cart1'><Link className='name' to="/cart"><i class="fa-solid fa-cart-flatbed"></i><span className='numb'>{cart.length}</span></Link></button>
                     </NavbarToggler>
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="me-auto" navbar>
@@ -77,27 +77,8 @@ const Header = () => {
                                 </NavLink>
                             </NavItem>
                         </Nav>
-                        {/* <Form>
-                            <FormGroup>
-                                <Label
-                                    for="exampleEmail"
-                                    hidden
-                                >
-                                    Email
-                                </Label>
-                                <Input
-                                    id="exampleEmail"
-                                    name="email"
-                                    placeholder="Email"
-                                    type="email"
-                                />
-                            </FormGroup>
-                        </Form>
-                        <Button>
-                                Submit
-                            </Button> */}
                         <NavbarText>
-                            <button className='cart'> <Link className='name' to="/cart"><i class="fa-solid fa-cart-flatbed"></i><span>{cart.length}</span></Link></button>
+                            <button className='cart'> <Link className='name' to="/cart"><i class="fa-solid fa-cart-flatbed"></i><span>{cart.length+cart2.length+cart3.length}</span></Link></button>
                         </NavbarText>
                     </Collapse>
                 </Navbar>

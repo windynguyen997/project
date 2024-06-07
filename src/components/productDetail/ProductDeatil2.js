@@ -18,7 +18,7 @@ const ProductDeatil2 = () => {
     useEffect(() => {
         getData()
     }, [])
-    const { addCart } = useContext(AppContext)
+    const { addCart3 } = useContext(AppContext)
     return (
         <div>
             <Container>
@@ -32,7 +32,7 @@ const ProductDeatil2 = () => {
                     <Col className='detail'>
                         <h3>Giá: <span className='sale1'>{data && data.sale}đ</span> <span className='price'>{data && data.price}đ</span></h3>
                         <span><p className='decrip'>{data && data.decription}</p></span>
-                        <Button className='buy1 buy3' onClick={(() => addCart(data && data.id))}>
+                        <Button className='buy1 buy3' onClick={(() => addCart3(data && data.id))}>
                         Thêm vào giỏ hàng
                         </Button>
                     </Col>

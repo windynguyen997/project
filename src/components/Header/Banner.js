@@ -24,22 +24,32 @@ const Banner = () => {
             <Slide {...proprietes}>
                 <div className="each-slide">
                     <div className='banner'>
-                        <img src={Img2} alt="img1" />
+                        <div className='hinh'> 
+                            <img className='hat' src={Img2} alt="img1" />
+                            </div>
+                        <Container>
                         <span className='contain' data-aos="fade-down">
                             <h1>Giải Pháp tối ưu dinh dưỡng BOSS</h1>
                             <h1>Tiết kiệm thời gian cho SEN</h1>
-                            <p>Cung cấp cho mèo .....</p>
+                            <p>Cung cấp cho mèo một chế độ dinh dưỡng toàn diện và đầy đủ. Đảm bảo hàng chính hãng.</p>
                         </span>
+                        </Container>
+
                     </div>
                 </div>
                 <div className="each-slide">
                     <div className='banner'>
-                        <img src={Img3} alt="img2" />
+                        <div className='hinh'>
+                        <img className='hat' src={Img3} alt="img2" />
+                        </div>
+                        <Container>
                         <span className='contain white'>
-                            <h1>Giải Pháp tối ưu dinh dưỡng BOSS</h1>
-                            <h1>Tiết kiệm thời gian cho SEN</h1>
-                            <p>Cung cấp cho mèo .....</p>
+                            <h1>Hãy tạo môi trường sống lành mạnh cho BOSS</h1>
+                            <h1>Để có thể bên cạnh BOSS của bạn lâu hơn</h1>
+                            <p>Cung cấp cho mèo những sản phẩm dĩnh dưỡng bổ sung và phụ kiện chất lượng góp phần tạo nên môi trường sống hoàn hảo cho mèo. </p>
                         </span>
+                        </Container>
+
                     </div>
                 </div>
             </Slide>

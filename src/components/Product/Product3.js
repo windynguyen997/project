@@ -21,10 +21,13 @@ const Product3 = () => {
     useEffect(() => {
         getData()
     }, [])
-    const { addCart } = useContext(AppContext)
+    const { addCart3 } = useContext(AppContext)
     return (
         <div>
+            <div className='bannerimg'>
             <img className='banner3' src={toy} alt='toy of cat' />
+            </div>
+            
             <div className='header_product'>
                 <h3 className='contain4'>Phụ kiện Của Moon Shop</h3>
                 <p className='contain5'>Hãy tạo cho Boss sự phát triển lành mạnh và hạnh phúc nhất, bằng cách xây dựng một môi trường tiện nghi và đáng yêu bằng những món phụ kiện nhỏ nhé!!!</p>
@@ -95,7 +98,7 @@ const Product3 = () => {
                                         </CardBody>
                                     </Link>
                                     <div className='buy2'>
-                                        <Button className='buy3' onClick={() => addCart(item.id)}>
+                                        <Button className='buy3' onClick={() => addCart3(item.id)}>
                                             Thêm vào giỏ hàng
                                         </Button>
                                         <Link className='name cardtext' to={`/product3/${item.id}`} key={index}>
