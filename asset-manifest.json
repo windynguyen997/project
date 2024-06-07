@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/project/static/css/main.35bdc54a.css",
+    "main.js": "/project/static/js/main.8d24e7c0.js",
+    "static/media/pubding.png": "/project/static/media/pubding.1aad8669f652d2c4cf2b.png",
+    "static/media/pate.png": "/project/static/media/pate.2f6979291d2a26519a69.png",
+    "static/media/toy.jpg": "/project/static/media/toy.7ae1c9440447c5733f4c.jpg",
+    "static/media/catfood1.jpg": "/project/static/media/catfood1.439c52af5faf04235bd9.jpg",
+    "static/media/MeoTPCN2.jpg": "/project/static/media/MeoTPCN2.80f7d6a116a40c824339.jpg",
+    "static/media/catfood8.jpg": "/project/static/media/catfood8.c00ddbf642ffee579998.jpg",
+    "static/media/catfood4.jpg": "/project/static/media/catfood4.bf1126f307f571da9270.jpg",
+    "static/media/logo1.png": "/project/static/media/logo1.a24a7a369764c2b59e69.png",
+    "static/media/logo.jpg": "/project/static/media/logo.939717e149109017ff40.jpg",
+    "index.html": "/project/index.html",
+    "main.35bdc54a.css.map": "/project/static/css/main.35bdc54a.css.map",
+    "main.8d24e7c0.js.map": "/project/static/js/main.8d24e7c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35bdc54a.css",
+    "static/js/main.8d24e7c0.js"
+  ]
+}
