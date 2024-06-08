@@ -28,7 +28,7 @@ const Product3 = () => {
             <img className='banner3' src={toy} alt='toy of cat' />
             </div>
             
-            <div className='header_product'>
+            <div className='header_product' data-aos="fade-right">
                 <h3 className='contain4'>Phụ kiện Của Moon Shop</h3>
                 <p className='contain5'>Hãy tạo cho Boss sự phát triển lành mạnh và hạnh phúc nhất, bằng cách xây dựng một môi trường tiện nghi và đáng yêu bằng những món phụ kiện nhỏ nhé!!!</p>
                 <Button className='TV' onClick={toggle}>Cần tư vấn</Button>

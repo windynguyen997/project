@@ -11,9 +11,9 @@ const Bestseller = () => {
                 <h1 className='h1'>Sản Phẩm Bán Chạy Của Shop</h1>
                 <div className='line1'></div>
                 <div className='coverbox1'>
-                    <div className='box1'>
+                    <div className='box1' data-aos="fade-right">
                         <img src="https://fiestapets-ishi.myshopify.com/cdn/shop/files/banner_1.png?v=1657519526"></img>
-                        <div className='contain3'>
+                        <div className='contain3' >
                             <h5 className='week'>Sản phẩm bán chạy trong tuần</h5>
                             <Link to="/product2/3">
                                 <img src={pubding}></img><br></br>
@@ -22,9 +22,9 @@ const Bestseller = () => {
 
                         </div>
                     </div>
-                    <div className='box1'>
+                    <div className='box1' data-aos="fade-left">
                         <img src="https://fiestapets-ishi.myshopify.com/cdn/shop/files/banner_2.png?v=1657519526"></img>
-                        <div className='contain3'>
+                        <div className='contain3' >
                             <h5 className='week'>Sản phẩm bán chạy trong tuần</h5>
 
                             <Link to="/product/2">

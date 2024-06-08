@@ -30,7 +30,7 @@ const Product2 = () => {
             <img className='banner3' src={tpcn} alt='meptpcn' />
             </div>
 
-            <div className='header_product'>
+            <div className='header_product' data-aos="fade-right">
                 <h3 className='contain2'>Thực Phẩm Chức Năng Của Moon Shop</h3>
                 <p className='contain1'>Hãy bảo vệ Boss của bạn một cách toàn diện, bằng cách ngoài thức ăn chính hãy cho Boss của bạn dùng thêm thực phẩm chức năng nhé!!!</p>
                 <Button className='TV' onClick={toggle}>Cần tư vấn</Button>
