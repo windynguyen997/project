@@ -79,6 +79,31 @@ const Product3 = () => {
                 </Modal>
             </div>
             <Container>
+            <div className='find'>
+                    <div>
+                        <Form className='name3'>
+                            <FormGroup>
+                                <Label
+                                    for="text"
+                                    hidden
+                                >
+                                    Tên sản phẩm
+                                </Label>
+                                <Input
+                                    className='name2'
+                                    // name="name"
+                                    placeholder="Têm sản phẩm"
+                                    type="text"
+                                />
+                            </FormGroup>
+                        </Form>
+                    </div>
+                    <div>
+                        <button className='tim' type='submit'>
+                            tìm
+                        </button>
+                    </div>
+                </div>
                 <Row>
                     {
                         data && data.map((item, index) => (
