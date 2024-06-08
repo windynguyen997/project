@@ -2,7 +2,7 @@
   "name": "project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nguyenngoc.github.io/project/",
+  "homepage": "https://windynguyen997.github.io/project/",
   "dependencies": {
     "@coreui/coreui": "^5.0.2",
     "@testing-library/jest-dom": "^5.17.0",
